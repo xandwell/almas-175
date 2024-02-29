@@ -1,0 +1,66 @@
+body {
+    font-family: Inter;
+}
+
+div {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 20px grey;
+}
+
+h1 {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 20px grey;
+    
+}
+
+table{
+    border: none;
+    align-items: center;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+tr.top {
+    background-color: aquamarine;
+    height: 6vh;
+}
+
+tr.day {
+    transition: transform 0.3s ease;
+}
+
+tr.day:hover{
+    background-color: azure;
+    transition: all 0.1s ease;
+    transform: translate(-1px, -2px);
+}
+
+td:hover {
+    scale: 1.01;
+    transition: 0.2s ease;
+    box-shadow: 10px 10px 30px grey;
+    background-color: azure;
+}
+
+td {
+    transition: 0.2s;
+}
+
+tr.bottom {
+    transition: all 0.2s ease;
+}
+
+tr.bottom:hover {
+    background-color:rgba(249, 54, 93, 0.401);
+    transition: all 0.2s ease;
+}
+
+
+
