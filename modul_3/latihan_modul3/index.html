@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Kalkulator Tambah/Kurang</h1>
+            <div class="container-input">
+                <input type="number" id="number1" placeholder="Bilangan pertama">
+
+                <input type="number" id="number2" placeholder="Bilangan kedua">
+    
+                <button id="tambahButton" onclick="operation(this.id)">Tambah</button>
+                <button id="kurangButton" onclick="operation(this.id)">Kurang</button>
+            </div>
+
+            <div class="container-output">
+                <h1>Hasil: </h1>
+                <p id="result">0</p>    
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        function operation(clicked) {
+            var num1 = parseFloat(document.getElementById("number1").value);
+            var num2 = parseFloat(document.getElementById("number2").value);
+            
+            if (clicked == "tambahButton") {
+                result = num1 + num2
+                document.getElementById("result").innerHTML = result
+            } else {
+                result = num1 - num2
+                document.getElementById("result").innerHTML = result
+            }
+        }
+    </script>
+</body>
+
+</html>
