@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kontak</title>
+</head>
+<body>
+    <form action="simpan_kontak.php" method="post">
+        <h1>Form Kontak</h1>
+        Nama: <input type="text" name="nama" id="nama"><br>
+        Jenis Kelamin: 
+        <input type="radio" name="jkel" id="laki" value="Laki-laki"> <label for="laki">Laki-laki</label>
+        <input type="radio" name="jkel" id="perempuan" value="Perempuan"> <label for="perempuan">Perempuan</label> <br>
+        E-mail: <input type="email" name="email" id="email"><br>
+        Alamat: <br> <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea> <br>
+        Kota: <input type="text" name="kota" id="kota"><br>
+        Pesan: <br> <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea> <br>
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
+
